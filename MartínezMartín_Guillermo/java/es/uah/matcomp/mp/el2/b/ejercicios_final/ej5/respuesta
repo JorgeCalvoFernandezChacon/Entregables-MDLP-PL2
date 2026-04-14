@@ -1,0 +1,3 @@
+Una de las mayores diferencias es que la serialización es únicamente de Java y Json es independiente de Java.
+Esto a su vez tambien implica que para usar Json se necesita una librería externa y con la serialización de
+Java no.

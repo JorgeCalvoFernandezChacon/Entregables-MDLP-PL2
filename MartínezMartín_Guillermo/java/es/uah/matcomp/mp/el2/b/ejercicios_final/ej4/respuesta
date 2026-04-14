@@ -1,0 +1,12 @@
+Tiene una estructura jerárquica
+1. Primero las llaves {}
+2. Luego el array de la lista de alumnos []
+3. Cada elemento del array es un objeto con sus propias llaves {}
+
+{
+    "nombreAsignatura":"Metodologías de Programación",
+    "estudiantes":[
+        {"nombre":"Guillermo","edad":19},
+        {"nombre":"Diego","edad":18}
+    ]
+}

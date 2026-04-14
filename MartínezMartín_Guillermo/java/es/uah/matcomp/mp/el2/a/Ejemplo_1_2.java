@@ -1,0 +1,35 @@
+package es.uah.matcomp.mp.el2.a;
+
+public class Ejemplo_1_2 {
+
+    public static void ejecutar() {
+        System.out.println("--- Ejecutando Ejemplo 1.2: Explorando la pila de llamadas ---");
+        System.out.println("Enter ejecutar()");
+        methodA();
+        System.out.println("Exit ejecutar()");
+    }
+
+    public static void methodA() {
+        System.out.println("  Enter methodA()");
+        methodB();
+        System.out.println("  Exit methodA()");
+    }
+
+    public static void methodB() {
+        System.out.println("    Enter methodB()");
+        methodC();
+        System.out.println("    Exit methodB()");
+    }
+
+    public static void methodC() {
+        System.out.println("      Enter methodC()");
+
+        try {
+            System.out.println(1 / 0);
+        } catch (ArithmeticException e) {
+            System.out.println("      ¡Excepción capturada en methodC!: " + e.getMessage());
+        }
+
+        System.out.println("      Exit methodC()");
+    }
+}

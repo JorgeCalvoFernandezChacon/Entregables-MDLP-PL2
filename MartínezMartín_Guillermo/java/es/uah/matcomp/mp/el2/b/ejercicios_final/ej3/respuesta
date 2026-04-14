@@ -1,0 +1,16 @@
+Si se crea un archivo .json con un array este aparecerá como una lista de elementos de la forma:
+
+[
+    { "nombre": "Guillermo", "curso": 1 },
+    { "nombre": "Diego", "curso": 1 }
+]
+
+Si el array está dentro de un objeto quedará asi:
+
+{
+    "Nombre": "texto",
+    "ArrayInterior": [
+        { "nombre": "Guillermo", "curso": "1" },
+        { "nombre": "Diego", "curso": "1" }
+    ]
+}

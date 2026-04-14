@@ -1,0 +1,10 @@
+Cuando creas un JSON de un objeto que tiene a otro, este seguirá teniendo el objeto dentro de esta forma:
+{
+  "nombre": "Guillermo",
+  "direccion": {
+    "calle": "Calle ...",
+    "ciudad": "Alcalá de Henares"
+  },
+  "dni": "01234123A"
+}
+Es decir, abrirá llaves dentro de las llaves.
