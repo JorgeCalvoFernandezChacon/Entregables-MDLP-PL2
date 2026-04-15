@@ -1,0 +1,3 @@
+La diferencia más notable es la salida, ya que la serialización de java nos devuelve una salida en bits, mientras que JSON
+nos devuelve un archivo de texto, mucho más legible. Por otro lado, la serialización de java, como su propio nombre indica es
+propia de java, mientras que JSON se puede usar con diversos lenguajes.

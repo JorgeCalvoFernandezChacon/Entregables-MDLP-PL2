@@ -1,0 +1,27 @@
+Al tener objetos dentro de objetos e intentar transformarlos a JSON, al objeto principal se representan cada objeto interno como un bloque JSON dentro de él.
+Por ejemplo, con el código simple:
+class Pedido {
+    String id;
+    Cliente cliente;
+}
+
+class Cliente {
+    String nombre;
+    Direccion direccion;
+}
+
+class Direccion {
+    String ciudad;
+    String calle;
+}
+Al pasarlo a JSON, recibiríamos:
+{
+  "id": "P001",
+  "cliente": {
+    "nombre": "Jorge",
+    "direccion": {
+      "ciudad": "Guadalajara",
+      "calle": "..."
+    }
+  }
+}

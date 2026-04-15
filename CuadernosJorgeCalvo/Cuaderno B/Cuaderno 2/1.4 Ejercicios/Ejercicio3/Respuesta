@@ -1,0 +1,19 @@
+Al crear un array y transformarlo a JSON, no ocurre nada especial, este pasa a estar contenido entre "[""]"
+Por ejemplo, si creamos un array con los primeros cinco números:
+int[] 5_numeros = {1, 2, 3, 4, 5};
+En JSON se representarían como [1, 2, 3, 4, 5]
+
+De esta forma, si el array es atributo de un objeto, este actuará como una unidad entre "[""]"
+Por ejemplo, veamos el siguiente caso:
+class Clase {
+    String nombre;
+    int[] notas;
+}
+Clase c = new Clase();
+c.nombre = "Jorge";
+c.notas = new int[]{7, 8, 9};
+La salida en JSON se vería cómo
+{
+  "nombre": "Jorge",
+  "notas": [7, 8, 9]
+}
